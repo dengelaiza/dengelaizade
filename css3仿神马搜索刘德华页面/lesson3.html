@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网页搜索_刘德华</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./font_ien16u4bfm/iconfont.css">
+    <link rel="stylesheet" href="./lesson.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="right">
+                <div class="goback">
+                    <i class="iconfont">&#xe61c;</i>
+                </div>
+                <div class="head">
+                    <h2>刘德华</h2>
+                </div>
+            </div>
+
+            <nav class="nav">
+                <div><a href="#" class="mainpage">主页</a></div>
+                <div><a href="#">人物介绍</a></div>
+                <div><a href="#">影视作品</a></div>
+                <div><a href="#">音乐作品</a></div>
+                <div><a href="#">视频</a></div>
+
+            </nav>
+        </div>
+        <div class="container">
+            <div class="leftimg">
+                <img src="https://ims-cdn0.sm.cn/ims?kt=MD5&at=smk&key=87ECEDE6E386C4C1C074447595BE7C33&tv=400_400&x.jpg"
+                    alt="">
+                <div class="pic-des">
+                    <i class="iconfont">&#xe64a;</i>
+                    图库</div>
+            </div>
+            <div class="des">
+                <h2>刘德华</h2>
+                <p>
+                    演员，歌手，填词人，制片人
+                </p>
+                <p>
+                    1961年09月27日（58岁）
+                </p>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="b-head">
+                <p>
+                    <span>百科</span>
+                    刘德华（AndyLau），1961年9月27日出生于中国香港，籍贯广东新会，中国香港男演员、歌手、作词人、制片人。1981年出演电影处女作《彩云曲》。1983年主演的武侠剧《神雕侠侣》在香港获得62点的收视纪录。1991年创办天幕电影公司。1994年担任剧情片《天与地》的制片人。2000年凭借警匪片《暗战》获第19届香港电影金像奖最佳男主角奖。2004年凭借警匪片《无间道3：终极无间》获第41届台湾金马奖最佳男主角奖。2005年获得香港UA院线颁发的全港最高累积票房香港男演员”奖。2006年获得釜山国际电影节亚洲最有贡献电影人奖。2011年主演剧情片《桃姐》，并凭借该片获台湾金马奖最佳男主角奖、香港电影金像奖最佳男主角奖；担任第49届台湾电影金马奖评审团主席。2017年主演警匪动作片《拆弹专家》；获世界杰出华人奖。1985年发行首张个人专辑《只知道此刻爱你》。演艺事业外，刘德华关心公益慈善。1994年创立刘德华慈善基金会。2000年被评为世界十大杰出青年。2005年发起亚洲新星导计划。2008年被委任为香港非官守太平绅士。2016年连任中国残疾人福利基金会副理事长。
+                </p>
+                <div class="b-head-right">
+                    <i class="iconfont">&#xe61e;</i>
+                </div>
+            </div>
+            <div class="bk-body">
+                <dl class="bk-grid clearfix">
+                    <dt>基础信息：</dt>
+                    <dd>1.74 米，68.0 kg，<a href="#">天秤座</a>，<a href="#">AB型</a></dd>
+                    <dt>性别：</dt>
+                    <dd>男</dd>
+                </dl>
+            </div>
+
+            <div class="bk-video">
+                <i class="iconfont">&#xe693;</i>
+                <span>星揭秘</span>
+                <div class="bk-video-vscroll">
+                    <ul>
+                        <li>1000首歌 400场演唱会 他红了三十多年还不过气</li>
+                    </ul>
+                </div>
+            </div>
+
+            <a class="bk-more-link" href="#">
+                <span class="">配偶/关联人物等更多内容
+                    <i class="iconfont">&#xe61e;</i>
+                </span>
+            </a>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
+
+<!-- 
+    盒模型
+
+    ie6 的混杂模式
+        border-box 等于内容区
+
+    弹性盒子
+        1、父级设置  display:flex
+        flex-direction  
+        flex-wrap 换行
+        justify-content:
+        aligin-items:
+        algin-content:
+        2、子元素设置
+            order
+            algin-self: flex-start flex-end center baseline stretch
+            flex :flex-grow flex-shrink flex-basis
+        第一个值 flex-grow 默认值0 伸 把剩余空间 按照比例划分
+         比如说剩下300空间 3个盒子 1 1 1 每个分到100
+
+        flex-shirk  缩 当盒子总宽度大于盒子包裹区的大小 缩小。
+            比如说超过300空间 按照 等比例缩小
+            
+            其中算的是内容区大小
+            外层容器 600px 三个子元素
+                100 200 400px 超过100px
+            flex-shrink 1 2 3 
+            计算公式 (3*400/1*100+2*200+3*400 ) * (100+200+400-600) = 80px
+            最后实际第三个缩小后的大小为 320px
+
+            flex-basis
+                不设置width,元素真实宽度的最小值等于basis
+                    设置width  > basis 其中为上下限
+    
+    居中对齐
+        外层设置 display: flex
+                align-items:center;
+                justify-container:center;
+    等分布局
+    圣杯模式
+        
+ -->

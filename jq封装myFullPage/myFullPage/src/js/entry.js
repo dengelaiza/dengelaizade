@@ -1,0 +1,9 @@
+$('.wrapper').myFullPage({
+    colorsArray:['#2b115a','#033504','#690606'],
+    onLeave:function(index,direction){
+        console.log(index,direction)
+    },
+    afterLoad:function(index,direction){
+        console.log(222)
+    }
+})

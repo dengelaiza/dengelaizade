@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.wrapper{
+    border: 1px solid black;
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+li:first-child{
+    text-align: center;
+    font-size: 20px;
+    color: #f40;
+    font-weight: bold;
+}
+li{
+    padding: 10px;
+}
+li:not(last-of-type){
+    border-bottom: 1px solid #000;
+
+}
+
+li:hover:nth-of-type(2n) + li{
+    background-color: #f40;
+    display: block;
+}
+/* li:hover:nth-last-of-type(2n){
+    background-color: #f40;
+    opacity: 0.8;
+} */
+li:not(:nth-of-type(2n)):not(:first-child){
+    display: none;
+}
